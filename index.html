@@ -13,6 +13,9 @@
             color: #333;
             direction: rtl;
             text-align: right;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header {
             background-color: #2c3e50;
@@ -24,6 +27,7 @@
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
+            flex: 1;
         }
         h1, h2 {
             font-family: Verdana, sans-serif;
@@ -53,9 +57,7 @@
             color: white;
             padding: 10px;
             text-align: center;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            margin-top: auto;
         }
         .profile-img {
             width: 150px;
@@ -63,6 +65,45 @@
             border-radius: 50%;
             border: 5px solid #2c3e50;
             object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .contact-section {
+            margin-top: 20px;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-links {
+            margin-top: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .contact-links a {
+            font-size: 1.2em; /* کاهش سایز فونت */
+            text-decoration: none;
+            color: #007bff;
+            background-color: #ecf0f1;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .contact-links a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .contact-title {
+            font-size: 1.2em; /* کاهش سایز فونت */
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .contact-subtitle {
+            font-size: 1em; /* اندازه فونت کوچک‌تر */
+            color: #2c3e50;
+            margin-top: 10px;
             margin-bottom: 20px;
         }
     </style>
@@ -105,12 +146,22 @@
         </ul>
     </section>
 
-    <section>
+    <section class="contact-section">
         <h2>تماس با من</h2>
-        <p>برای ارتباط با من، لطفاً از طریق ایمیل یا شماره تلفن همراه تماس بگیرید:</p>
-        <p><strong>ایمیل:</strong> <a href="mailto:shakibazad@gmail.com">shakibazad@gmail.com</a></p>
-        <p><strong>تلفن همراه:</strong> 09155129237</p>
-        <p><strong>تلفن همراه:</strong> 09155129237</p>
+        <div class="contact-info">
+            <p><strong>ایمیل:</strong> <a href="mailto:shakibazad@gmail.com">shakibazad@gmail.com</a></p>
+            <p><strong>تلفن همراه:</strong> 09155129237</p>
+        </div>
+
+        <!-- اضافه کردن بخش پیام رسان ها به زیرمجموعه تماس با من -->
+        <div class="contact-title">ارتباط از طریق پیام رسان‌ها:</div>
+        <div class="contact-subtitle">می‌توانید از پیام‌رسان‌های زیر برای تماس استفاده کنید:</div>
+        <div class="contact-links">
+            <a href="https://wa.me/989155129237" target="_blank">واتساپ</a>
+            <a href="https://t.me/shakibazad" target="_blank">تلگرام</a>
+            <a href="https://bale.ai/shakibazad" target="_blank">بله</a>
+            <a href="https://eitaa.com/shakibazad" target="_blank">ایتا</a>
+        </div>
     </section>
 </main>
 

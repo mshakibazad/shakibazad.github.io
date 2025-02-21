@@ -3,76 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه شخصی محمد شکیبازاد</title>
+    <title>محمد شکیبازاد</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --background-color: #f4f4f9;
+            --white-color: #fff;
+            --font-family: 'Vazirmatn', sans-serif;
+        }
+
         body {
-            font-family: Tahoma, sans-serif;
+            font-family: var(--font-family);
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: var(--background-color);
+            color: var(--text-color);
             direction: rtl;
             text-align: right;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            transition: background-color 0.3s, color 0.3s;
         }
+
         header {
-            background-color: #2c3e50;
-            color: white;
+            background-color: var(--primary-color);
+            color: var(--white-color);
             padding: 20px;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         main {
             padding: 20px;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             flex: 1;
         }
+
         h1, h2 {
-            font-family: Verdana, sans-serif;
-            color: #2c3e50;
+            font-family: var(--font-family);
+            color: var(--primary-color);
         }
+
         h1 {
-            font-size: 2em;
+            font-size: 2.5em;
         }
+
         h2 {
-            font-size: 1.5em;
+            font-size: 2em;
+            margin-bottom: 15px;
         }
+
         p, ul {
-            line-height: 1.6;
+            line-height: 1.7;
         }
+
         ul {
             padding-right: 20px;
         }
+
         a {
-            color: #007bff;
+            color: var(--secondary-color);
             text-decoration: none;
+            transition: color 0.3s;
         }
+
         a:hover {
             text-decoration: underline;
+            color: #0056b3;
         }
+
         footer {
-            background-color: #2c3e50;
-            color: white;
+            background-color: var(--primary-color);
+            color: var(--white-color);
             padding: 10px;
             text-align: center;
             margin-top: auto;
         }
+
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 5px solid #2c3e50;
+            border: 5px solid var(--primary-color);
             object-fit: cover;
             margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
         .contact-section {
-            margin-top: 20px;
+            margin-top: 30px;
         }
+
         .contact-info {
             margin-bottom: 20px;
         }
+
         .contact-links {
             margin-top: 10px;
             text-align: center;
@@ -81,93 +120,433 @@
             gap: 15px;
             flex-wrap: wrap;
         }
+
         .contact-links a {
-            font-size: 1.2em; /* کاهش سایز فونت */
+            font-size: 1.2em;
             text-decoration: none;
-            color: #007bff;
+            color: var(--secondary-color);
             background-color: #ecf0f1;
             padding: 8px 12px;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
         }
+
         .contact-links a:hover {
-            background-color: #3498db;
-            color: white;
+            background-color: var(--secondary-color);
+            color: var(--white-color);
         }
+
         .contact-title {
-            font-size: 1.2em; /* کاهش سایز فونت */
-            color: #2c3e50;
+            font-size: 1.4em;
+            color: var(--primary-color);
             margin-bottom: 15px;
             font-weight: bold;
         }
+
         .contact-subtitle {
-            font-size: 1em; /* اندازه فونت کوچک‌تر */
-            color: #2c3e50;
+            font-size: 1.1em;
+            color: var(--primary-color);
             margin-top: 10px;
             margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: var(--white-color);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s;
+        }
+
+        section:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .contact-links a {
+                font-size: 1em;
+                padding: 6px 10px;
+            }
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: var(--primary-color);
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Research Section */
+        .research-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .research-table th, .research-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: right;
+        }
+
+        .research-table th {
+            background-color: #f2f2f2;
+        }
+
+        .research-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Semantic HTML5 */
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        article {
+            margin-bottom: 30px;
+        }
+
+        aside {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>محمد شکیبازاد</h1>
-    <p>به صفحه شخصی من خوش آمدید!</p>
-</header>
-
-<main>
-    <section>
-        <img src="sh.jpg" alt="محمد شکیبازاد" class="profile-img">
-        <h2>درباره من</h2>
-        <p>محمد شکیبازاد، متخصص حوزه فناوری اطلاعات</p>
-    </section>
-
-    <section>
-        <h2>سوابق شغلی، تحصیلی و پژوهشی</h2>
+    <header>
+        <h1>محمد شکیبازاد</h1>
+        <p>به صفحه شخصی من خوش آمدید!</p>
+    </header>
+    <nav>
         <ul>
-            <li>دکتری فناوری اطلاعات - گرایش امنیت - دانشگاه مالک اشتر</li>
-            <li>رئیس امور کارت سوخت سامانه هوشمند سوخت - شرکت ملی پخش فرآورده‌های نفتی ایران</li>
-            <li>عضویت در بنیاد ملی نخبگان ایران</li>
-            <li>کارشناس رسمی دادگستری در حوزه فناوری اطلاعات به شماره پروانه 17857</li>
-            <li>نویسنده بیش از 17 مقاله در مجلات و کنفرانس‌های معتبر</li>
+            <li><a href="#about">درباره من</a></li>
+            <li><a href="#research">مقالات و پژوهش‌ها</a></li>
+            <li><a href="#skills">مهارت‌ها</a></li>
+            <li><a href="#contact">تماس با من</a></li>
         </ul>
-        <p><strong>صفحه مقالات من در Google Scholar:</strong>  
-            <a href="https://scholar.google.com/citations?user=cU-KFUMAAAAJ&hl=en" target="_blank">مشاهده مقالات</a>
-        </p>
-    </section>
-
-    <section>
-        <h2>مهارت‌ها</h2>
-        <ul>
-            <li>مدیریت پروژه‌های فناوری اطلاعات</li>
-            <li>امنیت اطلاعات و مدیریت امنیت سایبری</li>
-            <li>تحلیل، طراحی و پیاده‌سازی سامانه‌های نرم‌افزاری</li>
-            <li>مدیریت و راهبری سامانه‌های هوشمند</li>
-        </ul>
-    </section>
-
-    <section class="contact-section">
-        <h2>تماس با من</h2>
-        <div class="contact-info">
-            <p><strong>ایمیل:</strong> <a href="mailto:shakibazad@gmail.com">shakibazad@gmail.com</a></p>
-            <p><strong>تلفن همراه:</strong> 09155129237</p>
-        </div>
-
-        <!-- اضافه کردن بخش پیام رسان ها به زیرمجموعه تماس با من -->
-        <div class="contact-title">ارتباط از طریق پیام رسان‌ها:</div>
-        <div class="contact-subtitle">می‌توانید از پیام‌رسان‌های زیر برای تماس استفاده کنید:</div>
-        <div class="contact-links">
-            <a href="https://wa.me/989155129237" target="_blank">واتساپ</a>
-            <a href="https://t.me/shakibazad" target="_blank">تلگرام</a>
-            <a href="https://bale.ai/shakibazad" target="_blank">بله</a>
-            <a href="https://eitaa.com/shakibazad" target="_blank">ایتا</a>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 محمد شکیبازاد. تمامی حقوق محفوظ است.</p>
-</footer>
-
+    </nav>
+    <main>
+        <article id="about">
+            <section>
+                <img src="sh.jpg" alt="محمد شکیبازاد" class="profile-img">
+                <h2>درباره من</h2>
+                <p>محمد شکیبازاد، متخصص حوزه فناوری اطلاعات</p>
+            </section>
+            <section>
+                <h2>سوابق شغلی، تحصیلی و پژوهشی</h2>
+                <ul>
+                    <li>مدیر پروژه طراحی و پیاده سازی سامانه خدمات اینترنتی کارت هوشمند سوخت به آدرس <a href="http://fcs.niopdc.ir" target="_blank">FCS.Niopdc.ir</a></li>
+                    <li>مدیر فنی طرح بازتوزیع یارانه سوخت بنزین در جزیره کیش</li>
+                    <li>دکتری مهندسی فناوری اطلاعات گرایش امنیت از دانشگاه صنعتی مالک اشتر با معدل 19.75  - عنوان پایان‌نامه مدل‌سازی و شبیه‌سازی پویای صحنه نبرد سایبری</li>
+                    <li>عضویت در بنیاد ملی نخبگان کشور از سال 1397 تا کنون</li>
+                    <li>کارشناس رسمی دادگستری در حوزه فناوری اطلاعات به شماره پروانه 17857</li>
+                    <li>نویسنده بیش از 17 مقاله در مجلات و کنفرانس‌های معتبر</li>
+                </ul>
+                <p><strong>صفحه مقالات من در Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=cU-KFUMAAAAJ&hl=en" target="_blank">مشاهده مقالات</a></p>
+            </section>
+        </article>
+        <article id="research">
+            <section>
+                <h2>مقالات و پژوهش‌ها</h2>
+                <table class="research-table">
+                    <thead>
+                        <tr>
+                            <th>ردیف</th>
+                            <th>عنوان</th>
+                            <th>سال</th>
+                            <th>محل</th>
+                            <th>اعتبار</th>
+                            <th>توضیحات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A New Method for Assets Sensitivity Calculation and Technical Risks Assessment in the Information Systems</td>
+                            <td>2019</td>
+                            <td>IET Information Security</td>
+                            <td>ISI, JCR</td>
+                            <td>چاپ شده</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Presenting a method to perform cyber maneuvers</td>
+                            <td>2018</td>
+                            <td>Turkish Journal Of Electrical Engineering And Computer Sciences</td>
+                            <td>ISI, JCR</td>
+                            <td>چاپ شده</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A Framework to Create a Virtual Cyber Battlefield for Cyber Maneuvers and Impact Assessment</td>
+                            <td>2019</td>
+                            <td>Iranian Journal of Science and Technology, Transactions of Electrical Engineering</td>
+                            <td>ISI, JCR</td>
+                            <td>چاپ شده</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>A New Method for Maneuvering in Cyber Space</td>
+                            <td>2018</td>
+                            <td>Comptes rendus de l’Académie bulgare des Sciences</td>
+                            <td>ISI, JCR</td>
+                            <td>چاپ شده</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Identifying and Ranking CSFs for KM Implementing in Urban Water and Sewage Companies Using ISM-DEMATEL Technique</td>
+                            <td>2018</td>
+                            <td>Journal of Knowledge Management</td>
+                            <td>ISI, JCR</td>
+                            <td>چاپ شده</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>A framework to achieve dynamic model of cyber battlefield</td>
+                            <td>2017</td>
+                            <td>Bulletin of the Royal Society of Sciences of Liege</td>
+                            <td>ISI</td>
+                            <td>چاپ شده</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Modeling and Simulation of Cyber Battlefield</td>
+                            <td>2018</td>
+                            <td>Journal of Information Technology Management</td>
+                            <td>ISI</td>
+                            <td>چاپ شده</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>شناسایی و رتبه بندی عوامل کلیدی موفقیت برای اجرای مدیریت دانش در شرکت های آب و فاضلاب شهری با استفاده از تکنیک ISM-DEMATEL</td>
+                            <td>1398</td>
+                            <td>فصلنامه چشم انداز مدیریت دولتی - دانشگاه شهید بهشتی</td>
+                            <td>علمی پژوهشی</td>
+                            <td>چاپ شده</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>ارائه چارچوبی جهت استخراج و رتبه بندی عوامل اصلی پیاده سازی موفق مدیریت دانش در شرکت‌های آب و فاضلاب شهری</td>
+                            <td>1398</td>
+                            <td>علوم و مهندسی آب و فاضلاب</td>
+                            <td>علمی ترویجی</td>
+                            <td>چاپ شده</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>مدل‌سازی پویای صحنه نبرد سایبری</td>
+                            <td>2016</td>
+                            <td>4th International Conference on Applied Research in Computer Engineering & Signal Processing (ISC)</td>
+                            <td>ISC, Civilica</td>
+                            <td>کنفرانس</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>ارائه چهارچوبی به منظور دستیابی به آگاهی وضعیتی سایبری پویا در صحنه نبرد سایبری</td>
+                            <td>2017</td>
+                            <td>4th International Conference on Electrical & Computer Engineering (SID)</td>
+                            <td>Civilica, SID</td>
+                            <td>ارائه شفاهی، سخنرانی برتر</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>ارائه چهارچوبی جهت شبیه سازی صحنه نبرد سایبری پویا</td>
+                            <td>2017</td>
+                            <td>4th International Conference on Electrical & Computer Engineering (SID)</td>
+                            <td>Civilica, SID</td>
+                            <td>ارائه شفاهی</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>ارائه چارچوبی جهت استخراج و رتبه بندی عوامل اصلی پیاده سازی موفق مدیریت دانش در شرکت‌های آب و فاضلاب شهری</td>
+                            <td>1397</td>
+                            <td>دومین کنگره علوم و مهندسی آب و فاضلاب ایران</td>
+                            <td>Civilica</td>
+                            <td>پذیرش، شفاهی</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>صحنه نبرد سایبری: شبیه‌سازی شبکه کامپیوتری به‌منظور ارزیابی امنیتی</td>
+                            <td>1393</td>
+                            <td>هشتمین کنفرانس ملی فرماندهی و کنترل ایران C4I</td>
+                            <td>Civilica</td>
+                            <td>پذیرش، پوستر</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>ارائه چهارچوبی به منظور تخصیص هوشمند سوخت بر مبنای عملکرد</td>
+                            <td>1396</td>
+                            <td>ششمین کنفرانس فناوری اطلاعات نفت</td>
+                            <td>_</td>
+                            <td>پذیرش، پوستر</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>ارائه چهارچوبی جهت اجرای مانورهای سایبری به منظور دستیابی به آگاهی وضعیتی سایبری</td>
+                            <td>1396</td>
+                            <td>ششمین کنفرانس فناوری اطلاعات نفت</td>
+                            <td>_</td>
+                            <td>ارائه شفاهی</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>A new approach on hardening cyberspace</td>
+                            <td>2018</td>
+                            <td>(ICWR2018) - 4th International Conference on Web Research</td>
+                            <td>IEEE, ISC, Civilica</td>
+                            <td>کنفرانس</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>ارائه چهارچوب به منظور مدیریت هوشمند سوخت ناوگان حمل و نقل بر اساس پیمایش</td>
+                            <td>1396</td>
+                            <td>هفتمین کنفرانس بین المللی انرژی و محیط زیست - ایتک</td>
+                            <td>Civilica</td>
+                            <td>ارائه شفاهی</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>ارائه مدلی بومی جهت شناسایی تهدیدات و آسیب پذیری های فضای سایبری</td>
+                            <td>1396</td>
+                            <td>هفتمین کنفرانس بین المللی انرژی و محیط زیست - ایتک</td>
+                            <td>Civilica</td>
+                            <td>پذیرش، پوستر</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>ارائه شبیه سازی جهت شناسایی آسیب پذیری های محیط سایبری</td>
+                            <td>1396</td>
+                            <td>هفتمین کنفرانس بین المللی انرژی و محیط زیست - ایتک</td>
+                            <td>Civilica</td>
+                            <td>پذیرش، پوستر</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>ارائه چهارچوب و دست آوردهای مدیریت تخصیص سوخت نفت‌گاز بر اساس پیمایش</td>
+                            <td>1395</td>
+                            <td>ششمین کنفرانس بین المللی رویکردهای نوین در نگهداری انرژی - ایتک(ISC)</td>
+                            <td>ISC, Civilica</td>
+                            <td>پذیرش، پوستر</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>طرح ملی تخصیص هوشمند سوخت نفت‌گاز بر اساس پیمایش</td>
+                            <td>1395</td>
+                            <td>پنجمین کنفرانس فناوری اطلاعات و ارتباطات در نفت، گاز، پالایش و پتروشیمی</td>
+                            <td>_</td>
+                            <td>ارائه شفاهی</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>ارائه چارچوبی مفهومی برای پیاده سازی مدیریت ناب براساس تئوری مدیریت تغییر</td>
+                            <td>1397</td>
+                            <td>چهاردهمین کنفرانس بین المللی مدیریت پروژه</td>
+                            <td>Civilica</td>
+                            <td>پذیرش، پوستر</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>عضو هیئت داوران</td>
+                            <td>1396</td>
+                            <td>هفتمین کنفرانس بین المللی انرژی و محیط زیست - ایتک</td>
+                            <td>_</td>
+                            <td>داوری مقالات</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+        <article id="skills">
+            <section>
+                <h2>مهارت‌ها</h2>
+                <ul>
+                    <li>مدیریت پروژه‌های فناوری اطلاعات</li>
+                    <li>امنیت اطلاعات و مدیریت امنیت سایبری</li>
+                    <li>تحلیل، طراحی و پیاده‌سازی سامانه‌های نرم‌افزاری</li>
+                    <li>مدیریت و راهبری سامانه‌های هوشمند</li>
+                </ul>
+            </section>
+        </article>
+        <article id="contact">
+            <section class="contact-section">
+                <h2 class="contact-title">تماس با من</h2>
+                <div class="contact-info">
+                    <p><strong>ایمیل:</strong> <a href="mailto:shakibazad@gmail.com">shakibazad@gmail.com</a></p>
+                    <p><strong>تلفن همراه:</strong> 09155129237</p>
+                </div>
+                <!-- اضافه کردن بخش پیام رسان ها به زیرمجموعه تماس با من -->
+                <div class="contact-title">ارتباط از طریق پیام رسان‌ها:</div>
+                <div class="contact-subtitle">می‌توانید از پیام‌رسان‌های زیر برای تماس استفاده کنید:</div>
+                <div class="contact-links">
+                    <a href="https://wa.me/989155129237" target="_blank">واتساپ</a>
+                    <a href="https://t.me/shakibazad" target="_blank">تلگرام</a>
+                    <a href="https://bale.ai/shakibazad" target="_blank">بله</a>
+                    <a href="https://eitaa.com/shakibazad" target="_blank">ایتا</a>
+                </div>
+            </section>
+        </article>
+        <aside>
+            <h2>دسترسی سریع</h2>
+            <ul>
+                <li><a href="#about">درباره من</a></li>
+                <li><a href="#research">مقالات و پژوهش‌ها</a></li>
+                <li><a href="#skills">مهارت‌ها</a></li>
+                <li><a href="#contact">تماس با من</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>© 2025 محمد شکیبازاد. تمامی حقوق محفوظ است.</p>
+    </footer>
 </body>
 </html>

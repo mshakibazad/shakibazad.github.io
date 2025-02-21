@@ -25,11 +25,6 @@
             padding: 0;
             background-color: var(--background-color);
             color: var(--text-color);
-            direction: rtl;
-            text-align: right;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
             transition: background-color 0.3s, color 0.3s;
         }
 
@@ -46,6 +41,7 @@
 
         header h1 {
             color: #f0db4f; /* Changed header text color */
+            font-size: 1.5em; /* Reduced font size */
         }
 
         .language-switcher {
@@ -284,9 +280,9 @@
         }
     </style>
 </head>
-<body>
+<body >
     <header>
-        <h1 data-i18n="headerTitle">صفحه شخصی محمد شکیبازاد</h1>
+        <h1 data-fa="صفحه شخصی محمد شکیبازاد" data-en="Mohammad Shakibazad's Personal Page">صفحه شخصی محمد شکیبازاد</h1>
         <div>
             <button class="language-switcher" onclick="changeLanguage('fa')">FA</button>
             <button class="language-switcher" onclick="changeLanguage('en')">EN</button>
@@ -294,238 +290,238 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#about" data-i18n="navAbout">درباره من</a></li>
-            <li><a href="#research" data-i18n="navResearch">مقالات و پژوهش‌ها</a></li>
-            <li><a href="#skills" data-i18n="navSkills">مهارت‌ها</a></li>
-            <li><a href="#contact" data-i18n="navContact">تماس با من</a></li>
+            <li><a href="#about" data-fa="درباره من" data-en="About Me">درباره من</a></li>
+            <li><a href="#research" data-fa="مقالات و پژوهش‌ها" data-en="Publications">مقالات و پژوهش‌ها</a></li>
+            <li><a href="#skills" data-fa="مهارت‌ها" data-en="Skills">مهارت‌ها</a></li>
+            <li><a href="#contact" data-fa="تماس با من" data-en="Contact Me">تماس با من</a></li>
         </ul>
     </nav>
     <main>
         <article id="about">
             <section>
                 <img src="sh.jpg" alt="محمد شکیبازاد" class="profile-img">
-                <h2 data-i18n="aboutTitle">درباره من</h2>
-                <p data-i18n="aboutDescription">محمد شکیبازاد، متخصص حوزه فناوری اطلاعات</p>
+                <h2 data-fa="درباره من" data-en="About Me">درباره من</h2>
+                <p data-fa="محمد شکیبازاد، متخصص حوزه فناوری اطلاعات" data-en="Mohammad Shakibazad, IT Expert">محمد شکیبازاد، متخصص حوزه فناوری اطلاعات</p>
             </section>
             <section>
-                <h2 data-i18n="resumeTitle">سوابق شغلی، تحصیلی و پژوهشی</h2>
+                <h2 data-fa="سوابق شغلی، تحصیلی و پژوهشی" data-en="Work, Education and Research Experience">سوابق شغلی، تحصیلی و پژوهشی</h2>
                 <ul>
-                    <li data-i18n="resumeItem1">مدیر پروژه طراحی و پیاده سازی سامانه خدمات اینترنتی کارت هوشمند سوخت به آدرس <a href="http://fcs.niopdc.ir" target="_blank">FCS.Niopdc.ir</a></li>
-                    <li data-i18n="resumeItem2">مدیر فنی طرح بازتوزیع یارانه سوخت بنزین در جزیره کیش</li>
-                    <li data-i18n="resumeItem3">دکتری مهندسی فناوری اطلاعات گرایش امنیت از دانشگاه صنعتی مالک اشتر با معدل 19.75  - عنوان پایان‌نامه مدل‌سازی و شبیه‌سازی پویای صحنه نبرد سایبری</li>
-                    <li data-i18n="resumeItem4">عضویت در بنیاد ملی نخبگان کشور از سال 1397 تا کنون</li>
-                    <li data-i18n="resumeItem5">کارشناس رسمی دادگستری در حوزه فناوری اطلاعات به شماره پروانه 17857</li>
-                    <li data-i18n="resumeItem6">نویسنده بیش از 17 مقاله در مجلات و کنفرانس‌های معتبر</li>
+                    <li data-fa="مدیر پروژه طراحی و پیاده سازی سامانه خدمات اینترنتی کارت هوشمند سوخت به آدرس FCS.Niopdc.ir" data-en="Project Manager of Smart Fuel Card Internet Services System at FCS.Niopdc.ir">مدیر پروژه طراحی و پیاده سازی سامانه خدمات اینترنتی کارت هوشمند سوخت به آدرس FCS.Niopdc.ir</li>
+                    <li data-fa="مدیر فنی طرح بازتوزیع یارانه سوخت بنزین در جزیره کیش" data-en="Technical Manager of Gasoline Fuel Subsidy Redistribution Project in Kish Island">مدیر فنی طرح بازتوزیع یارانه سوخت بنزین در جزیره کیش</li>
+                    <li data-fa="دکتری مهندسی فناوری اطلاعات گرایش امنیت از دانشگاه صنعتی مالک اشتر با معدل 19.75  - عنوان پایان‌نامه مدل‌سازی و شبیه‌سازی پویای صحنه نبرد سایبری" data-en="Ph.D. in Information Technology Engineering, Security Major, Malek Ashtar University of Technology, GPA 19.75 - Dissertation Title: Modeling and Dynamic Simulation of Cyber Battlefield Scene">دکتری مهندسی فناوری اطلاعات گرایش امنیت از دانشگاه صنعتی مالک اشتر با معدل 19.75  - عنوان پایان‌نامه مدل‌سازی و شبیه‌سازی پویای صحنه نبرد سایبری</li>
+                    <li data-fa="عضویت در بنیاد ملی نخبگان کشور از سال 1397 تا کنون" data-en="Member of the National Elites Foundation of Iran since 2018">عضویت در بنیاد ملی نخبگان کشور از سال 1397 تا کنون</li>
+                    <li data-fa="کارشناس رسمی دادگستری در حوزه فناوری اطلاعات به شماره پروانه 17857" data-en="Official Justice Expert in the field of Information Technology with license number 17857">کارشناس رسمی دادگستری در حوزه فناوری اطلاعات به شماره پروانه 17857</li>
+                    <li data-fa="نویسنده بیش از 17 مقاله در مجلات و کنفرانس‌های معتبر" data-en="Author of more than 17 articles in reputable journals and conferences">نویسنده بیش از 17 مقاله در مجلات و کنفرانس‌های معتبر</li>
                 </ul>
-                <p><strong data-i18n="googleScholar">صفحه مقالات من در Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=cU-KFUMAAAAJ&hl=en" target="_blank">مشاهده مقالات</a></p>
+                <p><strong data-fa="صفحه مقالات من در Google Scholar:" data-en="My Google Scholar page:">صفحه مقالات من در Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=cU-KFUMAAAAJ&hl=en" target="_blank">مشاهده مقالات</a></p>
             </section>
         </article>
         <article id="research">
             <section>
-                <h2 data-i18n="researchTitle">مقالات و پژوهش‌ها</h2>
+                <h2 data-fa="مقالات و پژوهش‌ها" data-en="Publications">مقالات و پژوهش‌ها</h2>
                 <table class="research-table">
                     <thead>
                         <tr>
-                            <th data-i18n="tableHeader1">ردیف</th>
-                            <th data-i18n="tableHeader2">عنوان</th>
-                            <th data-i18n="tableHeader3">سال</th>
-                            <th data-i18n="tableHeader4">محل</th>
-                            <th data-i18n="tableHeader5">اعتبار</th>
-                            <th data-i18n="tableHeader6">توضیحات</th>
+                            <th data-fa="ردیف" data-en="No.">ردیف</th>
+                            <th data-fa="عنوان" data-en="Title">عنوان</th>
+                            <th data-fa="سال" data-en="Year">سال</th>
+                            <th data-fa="محل" data-en="Location">محل</th>
+                            <th data-fa="اعتبار" data-en="Credit">اعتبار</th>
+                            <th data-fa="توضیحات" data-en="Description">توضیحات</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td data-i18n="research1Title">A New Method for Assets Sensitivity Calculation and Technical Risks Assessment in the Information Systems</td>
+                            <td data-fa="A New Method for Assets Sensitivity Calculation and Technical Risks Assessment in the Information Systems" data-en="A New Method for Assets Sensitivity Calculation and Technical Risks Assessment in the Information Systems">A New Method for Assets Sensitivity Calculation and Technical Risks Assessment in the Information Systems</td>
                             <td>2019</td>
                             <td>IET Information Security</td>
                             <td>ISI, JCR</td>
-                            <td data-i18n="published">چاپ شده</td>
+                            <td data-fa="چاپ شده" data-en="Published">چاپ شده</td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td data-i18n="research2Title">Presenting a method to perform cyber maneuvers</td>
+                            <td data-fa="Presenting a method to perform cyber maneuvers" data-en="Presenting a method to perform cyber maneuvers">Presenting a method to perform cyber maneuvers</td>
                             <td>2018</td>
                             <td>Turkish Journal Of Electrical Engineering And Computer Sciences</td>
                             <td>ISI, JCR</td>
-                            <td data-i18n="published">چاپ شده</td>
+                            <td data-fa="چاپ شده" data-en="Published">چاپ شده</td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td data-i18n="research3Title">A Framework to Create a Virtual Cyber Battlefield for Cyber Maneuvers and Impact Assessment</td>
+                            <td data-fa="A Framework to Create a Virtual Cyber Battlefield for Cyber Maneuvers and Impact Assessment" data-en="A Framework to Create a Virtual Cyber Battlefield for Cyber Maneuvers and Impact Assessment">A Framework to Create a Virtual Cyber Battlefield for Cyber Maneuvers and Impact Assessment</td>
                             <td>2019</td>
                             <td>Iranian Journal of Science and Technology, Transactions of Electrical Engineering</td>
                             <td>ISI, JCR</td>
-                            <td data-i18n="published">چاپ شده</td>
+                            <td data-fa="چاپ شده" data-en="Published">چاپ شده</td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td data-i18n="research4Title">A New Method for Maneuvering in Cyber Space</td>
+                            <td data-fa="A New Method for Maneuvering in Cyber Space" data-en="A New Method for Maneuvering in Cyber Space">A New Method for Maneuvering in Cyber Space</td>
                             <td>2018</td>
                             <td>Comptes rendus de l’Académie bulgare des Sciences</td>
                             <td>ISI, JCR</td>
-                            <td data-i18n="published">چاپ شده</td>
+                            <td data-fa="چاپ شده" data-en="Published">چاپ شده</td>
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td data-i18n="research5Title">Identifying and Ranking CSFs for KM Implementing in Urban Water and Sewage Companies Using ISM-DEMATEL Technique</td>
+                            <td data-fa="Identifying and Ranking CSFs for KM Implementing in Urban Water and Sewage Companies Using ISM-DEMATEL Technique" data-en="Identifying and Ranking CSFs for KM Implementing in Urban Water and Sewage Companies Using ISM-DEMATEL Technique">Identifying and Ranking CSFs for KM Implementing in Urban Water and Sewage Companies Using ISM-DEMATEL Technique</td>
                             <td>2018</td>
                             <td>Journal of Knowledge Management</td>
                             <td>ISI, JCR</td>
-                            <td data-i18n="published">چاپ شده</td>
+                            <td data-fa="چاپ شده" data-en="Published">چاپ شده</td>
                         </tr>
                         <tr>
                             <td>6</td>
-                            <td data-i18n="research6Title">A framework to achieve dynamic model of cyber battlefield</td>
+                            <td data-fa="A framework to achieve dynamic model of cyber battlefield" data-en="A framework to achieve dynamic model of cyber battlefield">A framework to achieve dynamic model of cyber battlefield</td>
                             <td>2017</td>
                             <td>Bulletin of the Royal Society of Sciences of Liege</td>
                             <td>ISI</td>
-                            <td data-i18n="published">چاپ شده</td>
+                            <td data-fa="چاپ شده" data-en="Published">چاپ شده</td>
                         </tr>
                         <tr>
                             <td>7</td>
-                            <td data-i18n="research7Title">Modeling and Simulation of Cyber Battlefield</td>
+                            <td data-fa="Modeling and Simulation of Cyber Battlefield" data-en="Modeling and Simulation of Cyber Battlefield">Modeling and Simulation of Cyber Battlefield</td>
                             <td>2018</td>
                             <td>Journal of Information Technology Management</td>
                             <td>ISI</td>
-                            <td data-i18n="published">چاپ شده</td>
+                            <td data-fa="چاپ شده" data-en="Published">چاپ شده</td>
                         </tr>
                         <tr>
                             <td>8</td>
-                            <td data-i18n="research8Title">شناسایی و رتبه بندی عوامل کلیدی موفقیت برای اجرای مدیریت دانش در شرکت های آب و فاضلاب شهری با استفاده از تکنیک ISM-DEMATEL</td>
+                            <td data-fa="شناسایی و رتبه بندی عوامل کلیدی موفقیت برای اجرای مدیریت دانش در شرکت های آب و فاضلاب شهری با استفاده از تکنیک ISM-DEMATEL" data-en="Identifying and ranking key success factors for implementing knowledge management in urban water and sewage companies using ISM-DEMATEL technique">شناسایی و رتبه بندی عوامل کلیدی موفقیت برای اجرای مدیریت دانش در شرکت های آب و فاضلاب شهری با استفاده از تکنیک ISM-DEMATEL</td>
                             <td>1398</td>
                             <td>فصلنامه چشم انداز مدیریت دولتی - دانشگاه شهید بهشتی</td>
                             <td>علمی پژوهشی</td>
-                            <td data-i18n="published">چاپ شده</td>
+                            <td data-fa="چاپ شده" data-en="Published">چاپ شده</td>
                         </tr>
                         <tr>
                             <td>9</td>
-                            <td data-i18n="research9Title">ارائه چارچوبی جهت استخراج و رتبه بندی عوامل اصلی پیاده سازی موفق مدیریت دانش در شرکت‌های آب و فاضلاب شهری</td>
+                            <td data-fa="ارائه چارچوبی جهت استخراج و رتبه بندی عوامل اصلی پیاده سازی موفق مدیریت دانش در شرکت‌های آب و فاضلاب شهری" data-en="Providing a framework for extracting and ranking the main factors for the successful implementation of knowledge management in urban water and sewage companies">ارائه چارچوبی جهت استخراج و رتبه بندی عوامل اصلی پیاده سازی موفق مدیریت دانش در شرکت‌های آب و فاضلاب شهری</td>
                             <td>1398</td>
                             <td>علوم و مهندسی آب و فاضلاب</td>
                             <td>علمی ترویجی</td>
-                            <td data-i18n="published">چاپ شده</td>
+                            <td data-fa="چاپ شده" data-en="Published">چاپ شده</td>
                         </tr>
                         <tr>
                             <td>10</td>
-                            <td data-i18n="research10Title">مدل‌سازی پویای صحنه نبرد سایبری</td>
+                            <td data-fa="مدل‌سازی پویای صحنه نبرد سایبری" data-en="Dynamic modeling of cyber battlefield scene">مدل‌سازی پویای صحنه نبرد سایبری</td>
                             <td>2016</td>
                             <td>4th International Conference on Applied Research in Computer Engineering & Signal Processing (ISC)</td>
                             <td>ISC, Civilica</td>
-                            <td data-i18n="conference">کنفرانس</td>
+                            <td data-fa="کنفرانس" data-en="Conference">کنفرانس</td>
                         </tr>
                         <tr>
                             <td>11</td>
-                            <td data-i18n="research11Title">ارائه چهارچوبی به منظور دستیابی به آگاهی وضعیتی سایبری پویا در صحنه نبرد سایبری</td>
+                            <td data-fa="ارائه چهارچوبی به منظور دستیابی به آگاهی وضعیتی سایبری پویا در صحنه نبرد سایبری" data-en="Providing a framework for achieving dynamic cyber situational awareness in the cyber battlefield scene">ارائه چهارچوبی به منظور دستیابی به آگاهی وضعیتی سایبری پویا در صحنه نبرد سایبری</td>
                             <td>2017</td>
                             <td>4th International Conference on Electrical & Computer Engineering (SID)</td>
                             <td>Civilica, SID</td>
-                            <td data-i18n="oralPresentation">ارائه شفاهی، سخنرانی برتر</td>
+                            <td data-fa="ارائه شفاهی، سخنرانی برتر" data-en="Oral presentation, best speech">ارائه شفاهی، سخنرانی برتر</td>
                         </tr>
                         <tr>
                             <td>12</td>
-                            <td data-i18n="research12Title">ارائه چهارچوبی جهت شبیه سازی صحنه نبرد سایبری پویا</td>
+                            <td data-fa="ارائه چهارچوبی جهت شبیه سازی صحنه نبرد سایبری پویا" data-en="Providing a framework for simulating a dynamic cyber battlefield scene">ارائه چهارچوبی جهت شبیه سازی صحنه نبرد سایبری پویا</td>
                             <td>2017</td>
                             <td>4th International Conference on Electrical & Computer Engineering (SID)</td>
                             <td>Civilica, SID</td>
-                            <td data-i18n="oralPresentation">ارائه شفاهی</td>
+                            <td data-fa="ارائه شفاهی" data-en="Oral presentation">ارائه شفاهی</td>
                         </tr>
                         <tr>
                             <td>13</td>
-                            <td data-i18n="research13Title">ارائه چارچوبی جهت استخراج و رتبه بندی عوامل اصلی پیاده سازی موفق مدیریت دانش در شرکت‌های آب و فاضلاب شهری</td>
+                            <td data-fa="ارائه چارچوبی جهت استخراج و رتبه بندی عوامل اصلی پیاده سازی موفق مدیریت دانش در شرکت‌های آب و فاضلاب شهری" data-en="Providing a framework for extracting and ranking the main factors for the successful implementation of knowledge management in urban water and sewage companies">ارائه چارچوبی جهت استخراج و رتبه بندی عوامل اصلی پیاده سازی موفق مدیریت دانش در شرکت‌های آب و فاضلاب شهری</td>
                             <td>1397</td>
                             <td>دومین کنگره علوم و مهندسی آب و فاضلاب ایران</td>
                             <td>Civilica</td>
-                            <td data-i18n="acceptedOral">پذیرش، شفاهی</td>
+                            <td data-fa="پذیرش، شفاهی" data-en="Acceptance, oral">پذیرش، شفاهی</td>
                         </tr>
                         <tr>
                             <td>14</td>
-                            <td data-i18n="research14Title">صحنه نبرد سایبری: شبیه‌سازی شبکه کامپیوتری به‌منظور ارزیابی امنیتی</td>
+                            <td data-fa="صحنه نبرد سایبری: شبیه‌سازی شبکه کامپیوتری به‌منظور ارزیابی امنیتی" data-en="Cyber battlefield scene: Computer network simulation for security assessment">صحنه نبرد سایبری: شبیه‌سازی شبکه کامپیوتری به‌منظور ارزیابی امنیتی</td>
                             <td>1393</td>
                             <td>هشتمین کنفرانس ملی فرماندهی و کنترل ایران C4I</td>
                             <td>Civilica</td>
-                            <td data-i18n="acceptedPoster">پذیرش، پوستر</td>
+                            <td data-fa="پذیرش، پوستر" data-en="Acceptance, poster">پذیرش، پوستر</td>
                         </tr>
                         <tr>
                             <td>15</td>
-                            <td data-i18n="research15Title">ارائه چهارچوبی به منظور تخصیص هوشمند سوخت بر مبنای عملکرد</td>
+                            <td data-fa="ارائه چهارچوبی به منظور تخصیص هوشمند سوخت بر مبنای عملکرد" data-en="Providing a framework for intelligent fuel allocation based on performance">ارائه چهارچوبی به منظور تخصیص هوشمند سوخت بر مبنای عملکرد</td>
                             <td>1396</td>
                             <td>ششمین کنفرانس فناوری اطلاعات نفت</td>
                             <td>_</td>
-                            <td data-i18n="acceptedPoster">پذیرش، پوستر</td>
+                            <td data-fa="پذیرش، پوستر" data-en="Acceptance, poster">پذیرش، پوستر</td>
                         </tr>
                         <tr>
                             <td>16</td>
-                            <td data-i18n="research16Title">ارائه چهارچوبی جهت اجرای مانورهای سایبری به منظور دستیابی به آگاهی وضعیتی سایبری</td>
+                            <td data-fa="ارائه چهارچوبی جهت اجرای مانورهای سایبری به منظور دستیابی به آگاهی وضعیتی سایبری" data-en="Providing a framework for performing cyber maneuvers to achieve cyber situational awareness">ارائه چهارچوبی جهت اجرای مانورهای سایبری به منظور دستیابی به آگاهی وضعیتی سایبری</td>
                             <td>1396</td>
                             <td>ششمین کنفرانس فناوری اطلاعات نفت</td>
                             <td>_</td>
-                            <td data-i18n="oralPresentation">ارائه شفاهی</td>
+                            <td data-fa="ارائه شفاهی" data-en="Oral presentation">ارائه شفاهی</td>
                         </tr>
                         <tr>
                             <td>17</td>
-                            <td data-i18n="research17Title">A new approach on hardening cyberspace</td>
+                            <td data-fa="A new approach on hardening cyberspace" data-en="A new approach on hardening cyberspace">A new approach on hardening cyberspace</td>
                             <td>2018</td>
                             <td>(ICWR2018) - 4th International Conference on Web Research</td>
                             <td>IEEE, ISC, Civilica</td>
-                            <td data-i18n="conference">کنفرانس</td>
+                            <td data-fa="کنفرانس" data-en="Conference">کنفرانس</td>
                         </tr>
                         <tr>
                             <td>18</td>
-                            <td data-i18n="research18Title">ارائه چهارچوب به منظور مدیریت هوشمند سوخت ناوگان حمل و نقل بر اساس پیمایش</td>
+                            <td data-fa="ارائه چهارچوب به منظور مدیریت هوشمند سوخت ناوگان حمل و نقل بر اساس پیمایش" data-en="Providing a framework for intelligent fuel management of the transportation fleet based on navigation">ارائه چهارچوب به منظور مدیریت هوشمند سوخت ناوگان حمل و نقل بر اساس پیمایش</td>
                             <td>1396</td>
                             <td>هفتمین کنفرانس بین المللی انرژی و محیط زیست - ایتک</td>
                             <td>Civilica</td>
-                            <td data-i18n="oralPresentation">ارائه شفاهی</td>
+                            <td data-fa="ارائه شفاهی" data-en="Oral presentation">ارائه شفاهی</td>
                         </tr>
                         <tr>
                             <td>19</td>
-                            <td data-i18n="research19Title">ارائه مدلی بومی جهت شناسایی تهدیدات و آسیب پذیری های فضای سایبری</td>
+                            <td data-fa="ارائه مدلی بومی جهت شناسایی تهدیدات و آسیب پذیری های فضای سایبری" data-en="Providing a native model for identifying threats and vulnerabilities in cyberspace">ارائه مدلی بومی جهت شناسایی تهدیدات و آسیب پذیری های فضای سایبری</td>
                             <td>1396</td>
                             <td>هفتمین کنفرانس بین المللی انرژی و محیط زیست - ایتک</td>
                             <td>Civilica</td>
-                            <td data-i18n="acceptedPoster">پذیرش، پوستر</td>
+                            <td data-fa="پذیرش، پوستر" data-en="Acceptance, poster">پذیرش، پوستر</td>
                         </tr>
                         <tr>
                             <td>20</td>
-                            <td data-i18n="research20Title">ارائه شبیه سازی جهت شناسایی آسیب پذیری های محیط سایبری</td>
+                            <td data-fa="ارائه شبیه سازی جهت شناسایی آسیب پذیری های محیط سایبری" data-en="Providing a simulation to identify vulnerabilities in the cyber environment">ارائه شبیه سازی جهت شناسایی آسیب پذیری های محیط سایبری</td>
                             <td>1396</td>
                             <td>هفتمین کنفرانس بین المللی انرژی و محیط زیست - ایتک</td>
                             <td>Civilica</td>
-                            <td data-i18n="acceptedPoster">پذیرش، پوستر</td>
+                            <td data-fa="پذیرش، پوستر" data-en="Acceptance, poster">پذیرش، پوستر</td>
                         </tr>
                         <tr>
                             <td>21</td>
-                            <td data-i18n="research21Title">ارائه چهارچوب و دست آوردهای مدیریت تخصیص سوخت نفت‌گاز بر اساس پیمایش</td>
+                            <td data-fa="ارائه چهارچوب و دست آوردهای مدیریت تخصیص سوخت نفت‌گاز بر اساس پیمایش" data-en="Providing a framework and achievements of gas oil fuel allocation management based on navigation">ارائه چهارچوب و دست آوردهای مدیریت تخصیص سوخت نفت‌گاز بر اساس پیمایش</td>
                             <td>1395</td>
                             <td>ششمین کنفرانس بین المللی رویکردهای نوین در نگهداری انرژی - ایتک(ISC)</td>
                             <td>ISC, Civilica</td>
-                            <td data-i18n="acceptedPoster">پذیرش، پوستر</td>
+                            <td data-fa="پذیرش، پوستر" data-en="Acceptance, poster">پذیرش، پوستر</td>
                         </tr>
                         <tr>
                             <td>22</td>
-                            <td data-i18n="research22Title">طرح ملی تخصیص هوشمند سوخت نفت‌گاز بر اساس پیمایش</td>
+                            <td data-fa="طرح ملی تخصیص هوشمند سوخت نفت‌گاز بر اساس پیمایش" data-en="National plan for intelligent allocation of gas oil fuel based on navigation">طرح ملی تخصیص هوشمند سوخت نفت‌گاز بر اساس پیمایش</td>
                             <td>1395</td>
                             <td>پنجمین کنفرانس فناوری اطلاعات و ارتباطات در نفت، گاز، پالایش و پتروشیمی</td>
                             <td>_</td>
-                            <td data-i18n="oralPresentation">ارائه شفاهی</td>
+                            <td data-fa="ارائه شفاهی" data-en="Oral presentation">ارائه شفاهی</td>
                         </tr>
                         <tr>
                             <td>23</td>
-                            <td data-i18n="research23Title">ارائه چارچوبی مفهومی برای پیاده سازی مدیریت ناب براساس تئوری مدیریت تغییر</td>
+                            <td data-fa="ارائه چارچوبی مفهومی برای پیاده سازی مدیریت ناب براساس تئوری مدیریت تغییر" data-en="Providing a conceptual framework for implementing lean management based on change management theory">ارائه چارچوبی مفهومی برای پیاده سازی مدیریت ناب براساس تئوری مدیریت تغییر</td>
                             <td>1397</td>
                             <td>چهاردهمین کنفرانس بین المللی مدیریت پروژه</td>
                             <td>Civilica</td>
-                            <td data-i18n="acceptedPoster">پذیرش، پوستر</td>
+                            <td data-fa="پذیرش، پوستر" data-en="Acceptance, poster">پذیرش، پوستر</td>
                         </tr>
                         <tr>
                             <td>24</td>
-                            <td data-i18n="research24Title">عضو هیئت داوران</td>
+                            <td data-fa="عضو هیئت داوران" data-en="Member of the jury">عضو هیئت داوران</td>
                             <td>1396</td>
                             <td>هفتمین کنفرانس بین المللی انرژی و محیط زیست - ایتک</td>
                             <td>_</td>
-                            <td data-i18n="juryMember">داوری مقالات</td>
+                            <td data-fa="داوری مقالات" data-en="Reviewing articles">داوری مقالات</td>
                         </tr>
                     </tbody>
                 </table>
@@ -533,25 +529,25 @@
         </article>
         <article id="skills">
             <section>
-                <h2 data-i18n="skillsTitle">مهارت‌ها</h2>
+                <h2 data-fa="مهارت‌ها" data-en="Skills">مهارت‌ها</h2>
                 <ul>
-                    <li data-i18n="skill1">مدیریت پروژه‌های فناوری اطلاعات</li>
-                    <li data-i18n="skill2">امنیت اطلاعات و مدیریت امنیت سایبری</li>
-                    <li data-i18n="skill3">تحلیل، طراحی و پیاده‌سازی سامانه‌های نرم‌افزاری</li>
-                    <li data-i18n="skill4">مدیریت و راهبری سامانه‌های هوشمند</li>
+                    <li data-fa="مدیریت پروژه‌های فناوری اطلاعات" data-en="IT Project Management">مدیریت پروژه‌های فناوری اطلاعات</li>
+                    <li data-fa="امنیت اطلاعات و مدیریت امنیت سایبری" data-en="Information Security and Cyber Security Management">امنیت اطلاعات و مدیریت امنیت سایبری</li>
+                    <li data-fa="تحلیل، طراحی و پیاده‌سازی سامانه‌های نرم‌افزاری" data-en="Analysis, Design and Implementation of Software Systems">تحلیل، طراحی و پیاده‌سازی سامانه‌های نرم‌افزاری</li>
+                    <li data-fa="مدیریت و راهبری سامانه‌های هوشمند" data-en="Management and Operation of Intelligent Systems">مدیریت و راهبری سامانه‌های هوشمند</li>
                 </ul>
             </section>
         </article>
         <article id="contact">
             <section class="contact-section">
-                <h2 class="contact-title" data-i18n="contactTitle">تماس با من</h2>
+                <h2 class="contact-title" data-fa="تماس با من" data-en="Contact Me">تماس با من</h2>
                 <div class="contact-info">
-                    <p><strong data-i18n="email">ایمیل:</strong> <a href="mailto:shakibazad@gmail.com">shakibazad@gmail.com</a></p>
-                    <p><strong data-i18n="phone">تلفن همراه:</strong> 09155129237</p>
+                    <p><strong data-fa="ایمیل:" data-en="Email:">ایمیل:</strong> <a href="mailto:shakibazad@gmail.com">shakibazad@gmail.com</a></p>
+                    <p><strong data-fa="تلفن همراه:" data-en="Phone:">تلفن همراه:</strong> 09155129237</p>
                 </div>
                 <!-- اضافه کردن بخش پیام رسان ها به زیرمجموعه تماس با من -->
-                <div class="contact-title" data-i18n="messengerTitle">ارتباط از طریق پیام رسان‌ها:</div>
-                <div class="contact-subtitle" data-i18n="messengerSubtitle">می‌توانید از پیام‌رسان‌های زیر برای تماس استفاده کنید:</div>
+                <div class="contact-title" data-fa="ارتباط از طریق پیام رسان‌ها:" data-en="Contact via Messengers:">ارتباط از طریق پیام رسان‌ها:</div>
+                <div class="contact-subtitle" data-fa="می‌توانید از پیام‌رسان‌های زیر برای تماس استفاده کنید:" data-en="You can use the following messengers to contact me:">می‌توانید از پیام‌رسان‌های زیر برای تماس استفاده کنید:</div>
                 <div class="contact-links">
                     <a href="https://wa.me/989155129237" target="_blank">واتساپ</a>
                     <a href="https://t.me/shakibazad" target="_blank">تلگرام</a>
@@ -561,12 +557,12 @@
             </section>
         </article>
         <aside>
-            <h2 data-i18n="quickAccess">دسترسی سریع</h2>
+            <h2 data-fa="دسترسی سریع" data-en="Quick Access">دسترسی سریع</h2>
             <ul>
-                <li><a href="#about" data-i18n="navAbout">درباره من</a></li>
-                <li><a href="#research" data-i18n="navResearch">مقالات و پژوهش‌ها</a></li>
-                <li><a href="#skills" data-i18n="navSkills">مهارت‌ها</a></li>
-                <li><a href="#contact" data-i18n="navContact">تماس با من</a></li>
+                <li><a href="#about" data-fa="درباره من" data-en="About Me">درباره من</a></li>
+                <li><a href="#research" data-fa="مقالات و پژوهش‌ها" data-en="Publications">مقالات و پژوهش‌ها</a></li>
+                <li><a href="#skills" data-fa="مهارت‌ها" data-en="Skills">مهارت‌ها</a></li>
+                <li><a href="#contact" data-fa="تماس با من" data-en="Contact Me">تماس با من</a></li>
             </ul>
         </aside>
     </main>
@@ -574,102 +570,19 @@
         <p>© 2025 محمد شکیبازاد. تمامی حقوق محفوظ است.</p>
     </footer>
     <script>
-        const translations = {
-            fa: {
-                headerTitle: "صفحه شخصی محمد شکیبازاد",
-                navAbout: "درباره من",
-                navResearch: "مقالات و پژوهش‌ها",
-                navSkills: "مهارت‌ها",
-                navContact: "تماس با من",
-                aboutTitle: "درباره من",
-                aboutDescription: "محمد شکیبازاد، متخصص حوزه فناوری اطلاعات",
-                resumeTitle: "سوابق شغلی، تحصیلی و پژوهشی",
-                resumeItem1: "مدیر پروژه طراحی و پیاده سازی سامانه خدمات اینترنتی کارت هوشمند سوخت به آدرس <a href='http://fcs.niopdc.ir' target='_blank'>FCS.Niopdc.ir</a>",
-                resumeItem2: "مدیر فنی طرح بازتوزیع یارانه سوخت بنزین در جزیره کیش",
-                resumeItem3: "دکتری مهندسی فناوری اطلاعات گرایش امنیت از دانشگاه صنعتی مالک اشتر با معدل 19.75  - عنوان پایان‌نامه مدل‌سازی و شبیه‌سازی پویای صحنه نبرد سایبری",
-                resumeItem4: "عضویت در بنیاد ملی نخبگان کشور از سال 1397 تا کنون",
-                resumeItem5: "کارشناس رسمی دادگستری در حوزه فناوری اطلاعات به شماره پروانه 17857",
-                resumeItem6: "نویسنده بیش از 17 مقاله در مجلات و کنفرانس‌های معتبر",
-                googleScholar: "صفحه مقالات من در Google Scholar:",
-                researchTitle: "مقالات و پژوهش‌ها",
-                tableHeader1: "ردیف",
-                tableHeader2: "عنوان",
-                tableHeader3: "سال",
-                tableHeader4: "محل",
-                tableHeader5: "اعتبار",
-                tableHeader6: "توضیحات",
-                research1Title: "A New Method for Assets Sensitivity Calculation and Technical Risks Assessment in the Information Systems",
-                research2Title: "Presenting a method to perform cyber maneuvers",
-                research3Title: "A Framework to Create a Virtual Cyber Battlefield for Cyber Maneuvers and Impact Assessment",
-                research4Title: "A New Method for Maneuvering in Cyber Space",
-                research5Title: "Identifying and Ranking CSFs for KM Implementing in Urban Water and Sewage Companies Using ISM-DEMATEL Technique",
-                research6Title: "A framework to achieve dynamic model of cyber battlefield",
-                research7Title: "Modeling and Simulation of Cyber Battlefield",
-                research8Title: "شناسایی و رتبه بندی عوامل کلیدی موفقیت برای اجرای مدیریت دانش در شرکت های آب و فاضلاب شهری با استفاده از تکنیک ISM-DEMATEL",
-                research9Title: "ارائه چارچوبی جهت استخراج و رتبه بندی عوامل اصلی پیاده سازی موفق مدیریت دانش در شرکت‌های آب و فاضلاب شهری",
-                research10Title: "مدل‌سازی پویای صحنه نبرد سایبری",
-                research11Title: "ارائه چهارچوبی به منظور دستیابی به آگاهی وضعیتی سایبری پویا در صحنه نبرد سایبری",
-                research12Title: "ارائه چهارچوبی جهت شبیه سازی صحنه نبرد سایبری پویا",
-                research13Title: "ارائه چارچوبی جهت استخراج و رتبه بندی عوامل اصلی پیاده سازی موفق مدیریت دانش در شرکت‌های آب و فاضلاب شهری",
-                research14Title: "صحنه نبرد سایبری: شبیه‌سازی شبکه کامپیوتری به‌منظور ارزیابی امنیتی",
-                research15Title: "ارائه چهارچوبی به منظور تخصیص هوشمند سوخت بر مبنای عملکرد",
-                research16Title: "ارائه چهارچوبی جهت اجرای مانورهای سایبری به منظور دستیابی به آگاهی وضعیتی سایبری",
-                research17Title: "A new approach on hardening cyberspace",
-                research18Title: "ارائه چهارچوب به منظور مدیریت هوشمند سوخت ناوگان حمل و نقل بر اساس پیمایش",
-                research19Title: "ارائه مدلی بومی جهت شناسایی تهدیدات و آسیب پذیری های فضای سایبری",
-                research20Title: "ارائه شبیه سازی جهت شناسایی آسیب پذیری های محیط سایبری",
-                research21Title: "ارائه چهارچوب و دست آوردهای مدیریت تخصیص سوخت نفت‌گاز بر اساس پیمایش",
-                research22Title: "طرح ملی تخصیص هوشمند سوخت نفت‌گاز بر اساس پیمایش",
-                research23Title: "ارائه چارچوبی مفهومی برای پیاده سازی مدیریت ناب براساس تئوری مدیریت تغییر",
-                research24Title: "عضو هیئت داوران",
-                published: "چاپ شده",
-                conference: "کنفرانس",
-                oralPresentation: "ارائه شفاهی، سخنرانی برتر",
-                acceptedOral: "پذیرش، شفاهی",
-                acceptedPoster: "پذیرش، پوستر",
-                juryMember: "داوری مقالات",
-                skillsTitle: "مهارت‌ها",
-                skill1: "مدیریت پروژه‌های فناوری اطلاعات",
-                skill2: "امنیت اطلاعات و مدیریت امنیت سایبری",
-                skill3: "تحلیل، طراحی و پیاده‌سازی سامانه‌های نرم‌افزاری",
-                skill4: "مدیریت و راهبری سامانه‌های هوشمند",
-                contactTitle: "تماس با من",
-                email: "ایمیل:",
-                phone: "تلفن همراه:",
-                messengerTitle: "ارتباط از طریق پیام رسان‌ها:",
-                messengerSubtitle: "می‌توانید از پیام‌رسان‌های زیر برای تماس استفاده کنید:",
-                quickAccess: "دسترسی سریع"
-            },
-            en: {
-                headerTitle: "Mohammad Shakibazad's Personal Page",
-                navAbout: "About Me",
-                navResearch: "Publications",
-                navSkills: "Skills",
-                navContact: "Contact Me",
-                aboutTitle: "About Me",
-                aboutDescription: "Mohammad Shakibazad, IT Expert",
-                resumeTitle: "Work, Education and Research Experience",
-                resumeItem1: "Project Manager of Smart Fuel Card Internet Services System at <a href='http://fcs.niopdc.ir' target='_blank'>FCS.Niopdc.ir</a>",
-                resumeItem2: "Technical Manager of Gasoline Fuel Subsidy Redistribution Project in Kish Island",
-                resumeItem3: "Ph.D. in Information Technology Engineering, Security Major, Malek Ashtar University of Technology, GPA 19.75 - Dissertation Title: Modeling and Dynamic Simulation of Cyber Battlefield Scene",
-                resumeItem4: "Member of the National Elites Foundation of Iran since 2018",
-                resumeItem5: "Official Justice Expert in the field of Information Technology with license number 17857",
-                resumeItem6: "Author of more than 17 articles in reputable journals and conferences",
-                googleScholar: "My Google Scholar page:",
-                researchTitle: "Publications",
-                tableHeader1: "No.",
-                tableHeader2: "Title",
-                tableHeader3: "Year",
-                tableHeader4: "Location",
-                tableHeader5: "Credit",
-                tableHeader6: "Description",
-                research1Title: "A New Method for Assets Sensitivity Calculation and Technical Risks Assessment in the Information Systems",
-                research2Title: "Presenting a method to perform cyber maneuvers",
-                research3Title: "A Framework to Create a Virtual Cyber Battlefield for Cyber Maneuvers and Impact Assessment",
-                research4Title: "A New Method for Maneuvering in Cyber Space",
-                research5Title: "Identifying and Ranking CSFs for KM Implementing in Urban Water and Sewage Companies Using ISM-DEMATEL Technique",
-                research6Title: "A framework to achieve dynamic model of cyber battlefield",
-                research7Title: "Modeling and Simulation of Cyber Battlefield",
-                research8Title: "Identifying and ranking key success factors for implementing knowledge management in urban water and sewage companies using ISM-DEMATEL technique",
-                research9Title: "Providing a framework for extracting and ranking the main factors for the successful implementation of knowledge management in urban water and sewage companies",
-                research10Title: "Dynamic modeling of cyber
+        function changeLanguage(lang) {
+            const html = document.querySelector('html');
+            const elements = document.querySelectorAll('[data-fa]');
+            elements.forEach(element => {
+                if (lang === 'en') {
+                    element.textContent = element.dataset.en;
+                    html.setAttribute('dir', 'ltr'); // Set direction to LTR for English
+                } else {
+                    element.textContent = element.dataset.fa;
+                    html.setAttribute('dir', 'rtl'); // Set direction to RTL for Persian
+                }
+            });
+        }
+    </script>
+</body>
+</html>
